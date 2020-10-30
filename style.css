@@ -1,0 +1,24 @@
+body{
+    background-image:url("background.jpg");
+}
+canvas{
+    border:5px groove lightsalmon;
+   margin-top:100px;
+    margin-left:50px;
+}
+h1{
+    font-size:30px !important;
+    font-weight: bolder;
+    font-style: italic;
+    text-shadow:2px 2px darkorange;
+    box-shadow: 5px 10px 5px darkolivegreen;
+}
+button{
+    font-size:25px !important;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow:2px 2px lightseagreen;
+    border:5px ridge darkgoldenrod !important;
+    border-top-left-radius:20px !important;
+    border-bottom-right-radius:20px !important;
+}
