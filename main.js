@@ -6,9 +6,22 @@ function setup(){
     //canvas.position(500,200);
     canvas.center();
     video=createCapture(VIDEO);
-    //video.size(400,400);
+    video.size(400,400);
    video.hide();
-    
+
+   poseNet=ml5.poseNet(video,modelloaded);
+   poseNet.on('pose',goPoses);
+}
+function modelloaded(){
+    console.log("Posenet is initialized");
+}
+function goPoses(results){
+    if(results.length > 0){
+        console.log(results);
+        console.log("Mose-x"+ results[0].pose.nose.x);
+        console.log("Nose-y"+ results[0].pose.nose.y);
+
+    }
 }
 
 function draw(){
